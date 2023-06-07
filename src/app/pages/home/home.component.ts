@@ -21,11 +21,14 @@ export class HomeComponent implements OnInit{
   }
   ngOnInit(): void {
     debugger;
+    console.log("Hello")
     this.loadAllProducts();
   }
 
   loadAllProducts() {
     debugger;
+    console.log("Hi")
+
     this.productService.getAllProducts().subscribe((result: any)=>{
       this.productList = result.data;
     })
